@@ -1,7 +1,12 @@
 let userInput;
-userInput = prompt("What do you want to have for dinner?", "Type your answer here.");
-if ( userInput === "burrito" ) {
-  $("#response").html("Brilliant choice!");
-} else {
-  $("#response").html("Don’t you want a burrito?");
+userInput = prompt("Choose a number", "Type your answer here.");
+
+$("#response").html("<p>This is the list</p>");
+
+for (let i = 1; i <= userInput; i = i + 1) {
+  if (i % 2 === 0) {
+      $("#response").append("<br />" + i + " is even");
+    } else {
+      $("#response").append("<br />" + i + " is odd");
+    }
 }
