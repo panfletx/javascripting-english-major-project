@@ -10,3 +10,15 @@ for (let i = 1; i <= userInput; i = i + 1) {
       $("#response").append("<br />" + i + " is odd");
     }
 }
+
+
+let tipCalculator; // crea varibale 
+tipCalculator = function(total, tipRate){ //define variable
+  let tipAmount;
+  tipAmount = tipRate * total;
+
+  $("#response").html("Your tip is $" + tipAmount)
+
+};
+
+tipCalculator(50.00, 0.2)
