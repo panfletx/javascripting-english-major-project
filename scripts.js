@@ -1,4 +1,48 @@
-let totalInput;
+// Task: wrtie a function that always returns the lasgt item in whatever array you pass it
+
+let list, practiceFunction;
+
+list = [1, 2, 3, 4];
+listReverse = list.reverse();
+
+$("#response").html("The last element of the list is " + listReverse[0]);
+
+
+/* let myHabaneroSauceSquirts, myBurritoObject;
+// First, define and assign a variable for how 
+// spicy the burrito is.
+myHabaneroSauceSquirts = 3;
+// Now assign the burrito object.
+myBurritoObject = {
+  tortilla: "wheat",
+  guacamole: true,
+  beans: "pinto",
+  // Make use of the variable above.
+  habaneroSauceSquirts: myHabaneroSauceSquirts,
+  // Use the variable again in a function.
+  spiciness: function(){
+    if (myHabaneroSauceSquirts > 0 ){
+      alert("This is a spicy burrito!");
+    } else {
+      alert("This is a mild burrito.");
+    }
+  }
+};
+$("#response").html("Your burrito has " +
+  myBurritoObject.habaneroSauceSquirts +
+  " squirts of habanero.");
+myBurritoObject.spiciness();
+
+
+
+
+
+
+
+
+
+
+/* let totalInput;
 totalInput = prompt("What's the bill total?", "Type your answer here.");
 
 let tipTotal;
@@ -19,7 +63,7 @@ tipCalculator = function(){ //define variable como funcion
 tipCalculator()
 
 
-/* $("#response").html("<p>This is the list</p>");
+$("#response").html("<p>This is the list</p>");
 
 for (let i = 1; i <= totalInput; i = i + 1) { // 'for' es un loop
   if (i % 2 === 0) {
