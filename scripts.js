@@ -1,4 +1,24 @@
-// Task: wrtie a function that always returns the lasgt item in whatever array you pass it
+// Ask for a number and tell if it is an integer or not.
+
+let promptBox, numDiv, numberType, truthTest;
+
+promptBox = prompt("Is your number prime or even?", "Insert it here");
+numDiv = (promptBox / 2);
+numberType = Number.isInteger(numDiv);
+
+truthTest = function() {
+if (numberType === true) {
+    $("#response").html("Your number is even!");
+  } else {
+    $("#response").html("Your number is odd!");
+  }
+};
+
+truthTest();
+
+
+
+/* // Task: wrtie a function that always returns the lasgt item in whatever array you pass it
 
 let list, practiceFunction;
 
